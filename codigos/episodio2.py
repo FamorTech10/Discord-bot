@@ -70,4 +70,3 @@ async def salida(ctx,msg):
     await ctx.send(embed=embed)
 
 client.run(token)
-
