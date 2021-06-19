@@ -3,11 +3,11 @@ from pymongo import MongoClient
 import random
 import discord
 
-cluster = MongoClient("mongodb+srv://FamorTech:famoradmin@database.ao7de.mongodb.net/Discord?retryWrites=true&w=majority")
-cluster_data = cluster["Discord"]["Bot"]
+cluster = MongoClient("tu link de tu base de datos")
+cluster_data = cluster["Discord"]["Bot"] #estos son en base a tu base de datos igualmente
 client = commands.Bot(command_prefix="!")
 
-token = "ODUyOTgyMjM1NTUyMDIyNTU4.YMOvnA.brXG6eph8O0xfyy23L-VKRU62Pg"
+token = "el token de tu bot"
 @client.event
 async def on_ready():
     print("bot cargado")
@@ -69,9 +69,5 @@ async def salida(ctx,msg):
     embed = discord.Embed(title = author.name,description = msg, color = 0x00ffff)
     await ctx.send(embed=embed)
 
-@client.command(name='suma') #Funcion que realizara la suma entre dos numeros enteros
-async def sumar(ctx, num1,num2):
-    response = num1 + num2
-    await ctx.send(response)
 client.run(token)
 
