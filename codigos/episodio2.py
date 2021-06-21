@@ -3,11 +3,11 @@ from pymongo import MongoClient
 import random
 import discord
 
-cluster = MongoClient("tu link de tu base de datos")
-cluster_data = cluster["Discord"]["Bot"] #estos son en base a tu base de datos igualmente
+cluster = MongoClient("tu link de tu base de datos")#mira el episodio 2 si no sabes como conseguirlo
+cluster_data = cluster["Discord"]["Bot"] #estos dependen de tu base de datos, mira el episodio 2 si no sabes cuales son
 client = commands.Bot(command_prefix="!")
 
-token = "el token de tu bot"
+token = "el token de tu bot"#mira el episodio 1 si no sabes como conseguirlo
 @client.event
 async def on_ready():
     print("bot cargado")
