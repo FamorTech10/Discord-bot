@@ -5,11 +5,11 @@ import praw
 import youtube_dl
 token = "tu token del bot"#mira el episodio 1 de mi serie como crear un bot si no sabes como conseguirlo
 
-reddit = praw.Reddit(client_id = "Rx53O7HvKV0KsA",
-                    client_secret = "qLJvKVDrdI0it8AWpJFbQyFk2JjKjw",
-                    username = "famortech1",
-                    password = "M+NHp2,Q;c<+@^D",
-                    user_agent = "famorbot",
+reddit = praw.Reddit(client_id = "tu client de reddit",# si no sabes como hacerlo busca en youtube, yo no voy a hacer tutorial de esto pronto
+                    client_secret = "tu client secret de reddit",
+                    username = "tu usuario de reddit",
+                    password = "tu contraseña de reddit",
+                    user_agent = "cualquier cosa",
                     check_for_async=False)
 
 client = commands.Bot(command_prefix = "*",)
