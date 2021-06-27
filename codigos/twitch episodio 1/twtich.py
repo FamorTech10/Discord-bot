@@ -6,7 +6,7 @@ bot = commands.Bot(
     client_secret="tu client secret", #tu client secret, se obtiene en twitch developers
     prefix="!", #el prefix con el que contesta tu bot
     nick="bot", # el apodo de tu bot (no es visible)
-    initial_channels=[""] #los canales donde va a estar activo el bot
+    initial_channels=[""] #los canales donde va a estar activo el bot (deben estar escritos en minusculas)
 )
 
 @bot.event
